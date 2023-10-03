@@ -1,0 +1,21 @@
+[package]
+name = "burger-termin"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "burger-termin"
+path = "src/main.rs"
+
+
+
+[dependencies]
+anyhow = "1.0"
+hyper = "0.14.27"
+teloxide = { version = "0.12", features = ["macros"] }
+log = "0.4"
+pretty_env_logger = "0.4"
+tokio = { version =  "1.8", features = ["rt-multi-thread", "macros"] }
+strum = "0.25"
+strum_macros = "0.25"
+redis = { version = "0.23.3", features = ["tokio-comp"] }
